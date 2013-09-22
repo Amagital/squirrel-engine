@@ -15,9 +15,15 @@ import main.SEVector;
 
 public class SECamera {
 	
-	SEVector Position;
-	SENumber3 Target;
-	Camera Cam;
+	SEVector Position; //Where the cam is located
+	SENumber3 Target; //Where the cam points.
+	Camera Cam;       //The  camera object
+	
+	//Camera attributes
+	float FogNear = 0.0f;
+	float FogFar = 50.0f;
+	boolean Fog = true;
+	
 	/**
 	 * 
 	 */
@@ -43,6 +49,28 @@ public class SECamera {
 		
 		//Return the Vector to it's original position
 		this.Position.Position.set(OLDPosition.Position.x, OLDPosition.Position.y, OLDPosition.Position.z);
+	}
+	
+	//Updates only the position and rotation
+	public void updatePosition()
+	{
+		Cam.setLookAt(Target.x, Target.y, Target.z);
+		Cam.setPosition(Position.Position.x, Position.Position.y, Position.Position.z);
+	}
+	
+	//Updates only the attributes
+	public void updateAttributes()
+	{
+		Cam.setFogFar(FogFar);
+		Cam.setFogNear(FogNear);
+		Cam.setFogEnabled(Fog);
+	}
+	
+	//Updates Attributes and positions(/rotations)
+	public void update()
+	{
+		updatePosition();
+		updateAttributes();
 	}
 
 }

@@ -19,7 +19,11 @@ public class SENumber3 {
 		z = intZ;
 	}
 	
-	
+	/*
+	 * Simply sets the x, y, z values of the Number3
+	 * 
+	 * We might want to add methods for individual values
+	 */
 	public void set(float x, float y, float z) {
 		this.x = x;
 		this.y = y;
