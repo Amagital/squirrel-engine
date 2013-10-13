@@ -14,35 +14,12 @@ public final class R {
         public static int ic_launcher=0x7f020000;
     }
     public static final class raw {
-        public static int bumpmap_material_fragment=0x7f030000;
-        public static int bumpmap_phong_material=0x7f030001;
-        public static int color_picker_material_fragment=0x7f030002;
-        public static int color_picker_material_vertex=0x7f030003;
-        public static int copy_material_fragment=0x7f030004;
-        public static int copy_material_vertex=0x7f030005;
-        public static int cube_map_material_fragment=0x7f030006;
-        public static int cube_map_material_vertex=0x7f030007;
-        public static int diffuse_material_fragment=0x7f030008;
-        public static int diffuse_material_vertex=0x7f030009;
-        public static int gouraud_material_fragment=0x7f03000a;
-        public static int gouraud_material_vertex=0x7f03000b;
-        public static int masked_material_fragment=0x7f03000c;
-        public static int masked_material_vertex=0x7f03000d;
-        public static int particle_material_fragment=0x7f03000e;
-        public static int particle_material_vertex=0x7f03000f;
-        public static int phong_material_fragment=0x7f030010;
-        public static int phong_material_vertex=0x7f030011;
-        public static int simple_alpha_material_fragment=0x7f030012;
-        public static int simple_material_fragment=0x7f030013;
-        public static int simple_material_vertex=0x7f030014;
-        public static int skybox_material_fragment=0x7f030015;
-        public static int skybox_material_vertex=0x7f030016;
-        public static int specular_mask_material_fragment=0x7f030017;
-        public static int sphere_material_fragment=0x7f030018;
-        public static int sphere_material_vertex=0x7f030019;
-        public static int toon_material_fragment=0x7f03001a;
-        public static int video_material_fragment=0x7f03001b;
-        public static int video_material_vertex=0x7f03001c;
+        public static int blur_fragment_shader=0x7f030000;
+        public static int copy_fragment_shader=0x7f030001;
+        public static int fog_fragment_shader=0x7f030002;
+        public static int grey_scale_fragment_shader=0x7f030003;
+        public static int minimal_vertex_shader=0x7f030004;
+        public static int sepia_fragment_shader=0x7f030005;
     }
     public static final class string {
         public static int app_name=0x7f040000;
